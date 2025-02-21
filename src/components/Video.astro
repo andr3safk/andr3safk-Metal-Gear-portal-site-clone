@@ -1,7 +1,32 @@
+---
+import Cards from "./Cards.astro"
+---
+
 <div class="w-screen h-screen fixed top-0 left-0 overflow-hidden">
   <video class="w-full h-full object-cover" src="../../public/bg-video.mp4" autoplay loop muted></video>
 </div>
 
 <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-  <img src="../../public/logo.png" alt="Logo-metalGear" class="h-36">
+  <img src="../../public/logo.png" alt="Logo-metalGear" class="h-32">
+</div>
+
+<div class="absolute top-0 left-0 w-full h-full flex justify-center items-center mt-[500px]">
+  <div class="flex flex-col md:flex-row gap-6 z-30">
+
+    <Cards
+      image = "../../public/mgs3-remake.jpg" 
+      title = "METAL GEAR SOLID Δ: SNAKE EATER"
+      platforms = "PS5 / Xbox Series X|S / Steam®"
+      description = "A remake of the 2004 game METAL GEAR SOLID 3: SNAKE EATER."
+    />
+
+    <Cards
+      image ="../../public/mgs-collection.jpg"
+      title = "METAL GEAR SOLID: MASTER COLLECTION Vol.1"
+      platforms = "Nintendo Switch™ / PS5®, PS4® / Xbox Series X|S / Steam®"
+      description = "The first in a new collection of games from the legendary series."
+    />
+  </div>
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10"></div>
 </div>
