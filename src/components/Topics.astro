@@ -2,12 +2,15 @@
 import Cards from "./Cards.astro"
 ---
 
-<section class="h-screen w-screen absolute z-30">
-  <div>
-    <h2 class="uppercase">Topics</h2>
+<section class="h-screen w-screen absolute z-30 py-16">
+
+  <div class="h-full w-full granulado"></div>
+
+  <div class="flex justify-center text-4xl font-semibold">
+    <h2 class="uppercase z-30">Topics</h2>
   </div>
 
-  <div class="grid grid-cols-3">
+  <div class="grid grid-cols-3 py-9">
     <Cards
       image = "../../public/topics_beginner.jpg"
       description = "Beginner's Guide to METAL GEAR Released !"
@@ -38,4 +41,5 @@ import Cards from "./Cards.astro"
   <div class="flex justify-center">
     <a href="#" class="uppercase px-20 py-2.5 bg-white text-black font-semibold">More</a>
   </div>
+  
 </section>
