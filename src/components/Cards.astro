@@ -1,8 +1,8 @@
 ---
-const { image, title, platforms, description } = Astro.props;
+const { image, title, platforms, description, className } = Astro.props;
 ---
 
-<div class="relative w-[480px] max-w-lg bg-black text-white border border-white/40 overflow-hidden">
+<div class=`relative w-[480px] max-w-lg bg-black text-white border border-white/40 overflow-hidden ${className}`>
 
   <div class="relative overflow-hidden">
     <img 
