@@ -1,51 +1,46 @@
 ---
 import Cards from "./Cards.astro"
+import Button from "./Button.astro"
 ---
 
 <section class="h-[129vh] w-screen absolute z-30 py-16">
-
-  <div class="h-[130vh] w-screen relative granulado"></div>
-
+  <div class="h-[130vh] w-screen absolute top-0 left-0 granulado z-0"></div>
   <div class="flex justify-center text-4xl font-semibold">
     <h2 class="uppercase z-30">Topics</h2>
   </div>
 
-  <div class="grid grid-cols-3 py-9 max-w-7xl m-auto gap-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-10 relative z-40">
     <Cards
-      image = "../../public/topics_beginner.jpg"
-      description = "Beginner's Guide to METAL GEAR Released !"
-      className="max-w-sm h-auto"
+      image="../../public/topics_beginner.jpg"
+      description="Beginner's Guide to METAL GEAR Released!"
+      className="h-44"
     />
     <Cards
-      image = "../../public/mgs3-remake.jpg"
-      description = "METAL GEAR SOLID Δ: SNAKE EATER Pre-order Now!"
-      className="max-w-sm h-auto"
+      image="../../public/mgs3-remake.jpg"
+      description="METAL GEAR SOLID Δ: SNAKE EATER Pre-order Now!"
+      className="h-44"
     />
     <Cards
-      image = "../../public/mgs3-trailer.jpg"
-      description = "METAL GEAR SOLID Δ: SNAKE EATER - Release Date Trailer Released"
-      className="max-w-sm h-auto"
+      image="../../public/mgs3-trailer.jpg"
+      description="METAL GEAR SOLID Δ: SNAKE EATER - Release Date Trailer Released"
+      className="h-44"
     />
     <Cards
-      image = "../../public/snake-figure.jpg"
-      description = "METAL GEAR SOLID Δ: SNAKE EATER Collector's Pack - Snake ELITE BUST Images Added"
-      className="max-w-sm h-auto"
+      image="../../public/snake-figure.jpg"
+      description="METAL GEAR SOLID Δ: SNAKE EATER Collector's Pack - Snake ELITE BUST Images Added"
+      className="h-44"
     />
     <Cards
-      image = "../../public/"
-      description = ""
-      className="max-w-sm h-auto"
+      image="../../public/tgs-2024.jpg"
+      description="METAL GEAR SOLID Δ: SNAKE EATER - Official Trailer #2 Released !"
+      className="h-44"
     />
     <Cards
-      image = "../../public/"
-      description = ""
-      className="max-w-sm h-auto"
+      image="../../public/platform-release.jpg"
+      description="METAL GEAR - PRODUCTION HOTLINE at TGS2024 Released !"
+      className="h-44"
     />
-    
   </div>
 
-  <div class="flex justify-center">
-    <a href="#" class="uppercase px-20 py-2.5 bg-white text-black font-semibold z-30">More</a>
-  </div>
-  
+  <Button />
 </section>
