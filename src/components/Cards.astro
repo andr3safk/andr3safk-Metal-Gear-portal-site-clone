@@ -14,7 +14,8 @@ const { image, title, platforms, description, className } = Astro.props;
   <div class="p-4">
     <h2 class="text-lg font-bold">{title}</h2>
     {platforms && (
-      <p class="text-gray-400 text-xs mt-1">{platforms}</p>
+      <a class="text-gray-400 text-xs mt-1">{platforms}</a>
+      <a class="text-gray-400 text-xs mt-1">{platforms}</a>
     )}
     <p class="mt-1 text-sm">{description}</p>
   </div>
