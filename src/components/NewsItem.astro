@@ -1,24 +1,25 @@
 ---
+
+const { date, title, platforms } = Astro.props;
+
 interface Props {
   date: string;
   title: string;
   platforms?: string;
 }
-
-const { date, title, platforms } = Astro.props;
 ---
 
-<div>
-  <div class="flex">
-    <p class="text-gray-600 text-base justify-center">{date}</p>
-    <h3 class="text-white text-lg justify-center">{title}</h3>
+<div class="bg-gray-950">
+  <div class="flex justify-center">
+    <p class="text-gray-600 text-base">{date}</p>
+    <h3 class="text-white text-lg">{title}</h3>
     <img src="../../public/flecha-derecha.png" alt="flecha derecha">
   </div>
 
-  <div>
+  <div class="flex">
     {platforms && (
-      <a class="text-gray-400 text-xs mt-1">{platforms}</a>
-      <a class="text-gray-400 text-xs mt-1">{platforms}</a>
+      <p class="text-gray-400 text-xs mt-1">{platforms}</p>
+      <p class="text-gray-400 text-xs mt-1">{platforms}</p>
     )}
   </div>
 </div>

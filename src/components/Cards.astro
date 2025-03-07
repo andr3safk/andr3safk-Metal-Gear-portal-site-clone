@@ -7,15 +7,14 @@ const { image, title, platforms, description, className } = Astro.props;
     <img 
       src={image} 
       alt={title} 
-      class=`w-full h-64 object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-105 ${className}`
+      class={`w-full h-64 object-contain transition-transform duration-300 ease-in-out group-hover:scale-105 ${className}`}
     />
   </div>
 
   <div class="p-4">
     <h2 class="text-lg font-bold">{title}</h2>
     {platforms && (
-      <a class="text-gray-400 text-xs mt-1">{platforms}</a>
-      <a class="text-gray-400 text-xs mt-1">{platforms}</a>
+      <p class="text-gray-400 text-xs mt-1">{platforms}</p>
     )}
     <p class="mt-1 text-sm">{description}</p>
   </div>
