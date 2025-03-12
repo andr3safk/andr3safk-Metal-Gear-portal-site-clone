@@ -2,38 +2,45 @@
 import Button from "./Button.astro"
 import NewsItem from "./NewsItem.astro"
 ---
- 
-<section class="relative h-screen w-screen py-16 z-30">
-  <div class="flex justify-center text-4xl font-semibold">
-    <h2 class="uppercase z-30">News</h2>
+
+<section class="relative h-[90vh] w-screen py-16 mt-[7px]">
+  
+  <div class="absolute inset-0 w-full h-full granulado z-0 "></div>
+
+  <div class="relative z-10 flex justify-center text-4xl font-semibold">
+    <h2 class="uppercase">News</h2>
   </div>
 
-  <div class="py-10">
-    <NewsItem
-      date="20/02/2025"
-      title="METAL GEAR SOLID Δ: SNAKE EATER Collector's Pack - Snake ELITE BUST Images Adde"
-     />
+  <div class="relative z-10 py-8">
+    <NewsItem 
+      date="20/02/2025" 
+      title="METAL GEAR SOLID Δ: SNAKE EATER Collector's Pack - Snake ELITE BUST Images Added" />
 
-     <NewsItem
-      date="12/02/2025"
-      title="METAL GEAR SOLID Δ: SNAKE EATER Pre-order Now !"
-     />
+    <NewsItem 
+      date="12/02/2025" 
+      title="METAL GEAR SOLID Δ: SNAKE EATER Pre-order Now!"
+    />
 
-     <NewsItem
-      date="12/02/2025"
+    <NewsItem 
+      date="12/02/2025" 
       title="METAL GEAR SOLID Δ: SNAKE EATER - Release Date Trailer Released"
-     />
+      
+    />
 
-     <NewsItem
-      date="12/02/2025"
+    <NewsItem 
+      date="12/02/2025" 
       title="METAL GEAR SOLID Δ: SNAKE EATER - ADDITIONAL GAME MODES Released"
-     />
+      platforms={["PlayStation 5/Steam", "Xbox"]} 
+    />
 
-     <NewsItem
-      date="12/02/2025"
+    <NewsItem 
+      date="12/02/2025" 
       title="METAL GEAR SOLID Δ: SNAKE EATER - CHARACTERS Updated"
-     />
+    />
+      
   </div>
 
-  <Button />
+  <div class="relative z-10 flex justify-center">
+    <Button />
+  </div>
 </section>

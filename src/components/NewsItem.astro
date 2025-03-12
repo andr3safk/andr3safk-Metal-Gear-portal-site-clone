@@ -1,25 +1,26 @@
 ---
-
-const { date, title, platforms } = Astro.props;
+const { date, title, platforms = [] } = Astro.props;
 
 interface Props {
   date: string;
   title: string;
-  platforms?: string;
+  platforms?: string[];
 }
 ---
 
-<div class="bg-gray-950">
-  <div class="flex justify-center">
-    <p class="text-gray-600 text-base">{date}</p>
-    <h3 class="text-white text-lg">{title}</h3>
-    <img src="../../public/flecha-derecha.png" alt="flecha derecha">
+<div class="bg-[#1c1c1c] max-w-5xl p-4 rounded-sm mx-auto my-3">
+  
+  <div class="flex justify-between items-center">
+    <p class="text-[#999999] text-sm">{date}</p>
+    <h3 class="text-white text-base font-normal flex-1 ml-4">{title}</h3>
+    <img src="../../public/flecha-derecha.png" alt="flecha derecha" class="w-4 h-4 invert">
   </div>
 
-  <div class="flex">
-    {platforms && (
-      <p class="text-gray-400 text-xs mt-1">{platforms}</p>
-      <p class="text-gray-400 text-xs mt-1">{platforms}</p>
-    )}
-  </div>
+  {platforms.length > 0 && (
+    <div class="flex gap-2 mt-3">
+      {platforms.map(platform => (
+        <div class="bg-white text-black text-xs font-bold px-3 py-1 rounded-md">{platform}</div>
+      ))}
+    </div>
+  )}
 </div>
