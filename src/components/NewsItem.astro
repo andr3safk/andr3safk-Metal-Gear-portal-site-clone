@@ -17,9 +17,9 @@ interface Props {
   </div>
 
   {platforms.length > 0 && (
-    <div class="flex gap-2 mt-3">
+    <div class="flex gap-2 mt-3 ml-22">
       {platforms.map(platform => (
-        <div class="bg-white text-black text-xs font-bold px-3 py-1 rounded-md">{platform}</div>
+        <a class="bg-white text-black text-xs font-bold px-6 py-1.5">{platform}</a>
       ))}
     </div>
   )}
