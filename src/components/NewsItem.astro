@@ -19,7 +19,7 @@ interface Props {
   {platforms.length > 0 && (
     <div class="flex gap-2 mt-3 ml-22">
       {platforms.map(platform => (
-        <a class="bg-white text-black text-xs font-bold px-6 py-1.5">{platform}</a>
+        <a class="bg-white text-black text-xs font-bold px-6 py-1.5 hover:bg-white/60 hover:transition-colors hover:duration-300 hover:ease-in-out">{platform}</a>
       ))}
     </div>
   )}
